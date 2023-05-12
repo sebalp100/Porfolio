@@ -52,3 +52,18 @@ body {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--tertiary);
 }
+
+.shadow-custom {
+  text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
+.frontImage {
+  border: 3px solid #ff9301;
+  border-radius: 50%;
+}
+
+.railsIcon {
+  border-radius: 50%;
+  border: 1px solid white;
+  background-color: #f1f1f1;
+}

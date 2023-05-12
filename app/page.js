@@ -5,7 +5,7 @@ import Projects from "@/components/Projects"
 
 export default function Container() {
   return (
-    <main className="flex min-h-screen scroll-smooth flex-col items-center justify-between">
+    <main className="flex min-h-screen scroll-smooth flex-col items-center">
       <Home />
       <About />
       <Projects />
