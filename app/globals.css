@@ -67,3 +67,29 @@ body {
   border: 1px solid white;
   background-color: #f1f1f1;
 }
+
+.slider-list {
+  gap: 10px;
+  list-style: none;
+}
+
+li {
+  text-align: center;
+}
+
+.paging-dot {
+  fill: white;
+  width: 10px;
+  height: 10px;
+  margin-right: 4px;
+}
+
+circle {
+  width: 10px;
+  height: 10px;
+}
+
+ul {
+  position: absolute;
+  top: 40px !important;
+}
