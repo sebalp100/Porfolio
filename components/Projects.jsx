@@ -3,6 +3,7 @@ import React from 'react';
 import Carousel from 'nuka-carousel';
 import data from './data/data';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const Projects = () => {
   const settings = {
@@ -16,13 +17,31 @@ const Projects = () => {
     >
       <Carousel {...settings}>
         {data.map((room) => (
-          <li key={room.id} className="bg-gray-900">
-            <Image alt="Project" src={room.image} width={1118} height={749} />
-            <h4 className="roomNames">{room.title}</h4>
-            <span className="separator">. . . . . . . . . . . . . .</span>
-            <p>{room.description}</p>
-            <div>{room.icons}</div>
-          </li>
+          <Link key={room.id} href={room.link}>
+            <li
+              key={room.id}
+              className="bg-gray-900 hover:bg-gray-100 hover:text-gray-900 transition ease-in-out delay-0 duration-500"
+            >
+              <Image
+                alt="Project"
+                src={room.image}
+                width={1118}
+                height={749}
+                style={{
+                  width: '90%',
+                  margin: '5%',
+                  paddingTop: '5%',
+                  objectFit: 'fill',
+                }}
+              />
+              <h4 className="roomNames">{room.title}</h4>
+              <span className="separator">. . . . . . . . . . . . . .</span>
+              <p>{room.description}</p>
+              <div className="flex justify-center mt-5 pb-4 text-3xl gap-4">
+                {room.icons}
+              </div>
+            </li>
+          </Link>
         ))}
       </Carousel>
     </section>

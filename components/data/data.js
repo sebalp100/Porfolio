@@ -6,17 +6,17 @@ const data = [
     id: 1,
     title: 'Hotel Bookings',
     description: 'This is a Hotel bookings app that allows users to search a list of rooms availables and make reservations for 24hs. It also allows user to add and remove rooms.',
-    icons: <><FaReact /><SiRedux /><SiRubyonrails /></>,
+    icons: <><FaReact /><SiRedux /><SiRubyonrails className="railsIcon text-gray-950" /></>,
     image: "/hotelb.png",
     link: 'https://github.com/sebalp100/hotel-bookings-frontend'
   },
   {
     id: 2,
-    title: 'Hotel Bookings',
-    description: 'This is a Hotel bookings app that allows users to search a list of rooms availables and make reservations for 24hs. It also allows user to add and remove rooms.',
-    icons: <><FaReact /><SiRedux /><SiRubyonrails /></>,
-    image: '/hotelb.png',
-    link: 'https://github.com/sebalp100/hotel-bookings-frontend'
+    title: 'BudgetMate',
+    description: 'Mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    icons: <><SiRedux /><SiRubyonrails /></>,
+    image: '/budget.png',
+    link: 'https://github.com/sebalp100/budget-mate'
   },
   {
     id: 3,
