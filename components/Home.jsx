@@ -15,7 +15,7 @@ const Home = () => {
       <header className="absolute top-4 text-sm left-28 font-semibold">
         <p>sebalp100@gmail.com</p>
       </header>
-      <div className="text-center sm:text-start">
+      <div className="slide-bottom text-center sm:text-start">
         <h1 className="text-xl mb-5 sm:ml-40 font-bold shadow-custom">
           Hello, my name is
         </h1>
