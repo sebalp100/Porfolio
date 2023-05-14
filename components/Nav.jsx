@@ -44,7 +44,7 @@ const Nav = () => {
       aria-label="Sidebar"
     >
       <div className="mt-4 mb-20">
-        <Image src="/portflogo.png" alt="My Logo" width={60} height={50} />
+        <Image src="/portflogo.png" alt="My Logo" width={60} height={50} className='logo' />
       </div>
       <div className="flex flex-col gap-6 items-center w-full">
         <Link
