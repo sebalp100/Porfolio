@@ -9,6 +9,7 @@
   --primary: #f1f1f1;
   --secondary: rgba(240, 151, 17, 0.959);
   --tertiary: rgba(248, 155, 16, 0.726);
+  --slides-to-show: 1;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -123,6 +124,10 @@ ul {
   width: 100%;
 }
 
+.sumbitButton {
+  text-shadow: 1px 2px 0 rgba(0, 0, 0, 0.5);
+}
+
 @media only screen and (min-width: 640px) {
   #projects {
     padding-left: 5rem;
@@ -133,5 +138,9 @@ ul {
   .slider-container {
     width: 88%;
     display: inline;
+  }
+
+  :root {
+    --slides-to-show: 2;
   }
 }

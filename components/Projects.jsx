@@ -35,7 +35,7 @@ const Projects = () => {
       id="projects"
       className="flex text-white h-screen bg-slate-950 flex-col justify-center items-center"
     >
-      <h2 className="text-3xl">My Projects</h2>
+      <h2 className="text-3xl font-bold">My Projects</h2>
       <Carousel {...settings}>
         {data.map((room) => (
           <Link key={room.id} href={room.link}>
@@ -56,9 +56,9 @@ const Projects = () => {
                   objectFit: 'fill',
                 }}
               />
-              <h4 className="roomNames">{room.title}</h4>
+              <h4 className="roomNames font-semibold">{room.title}</h4>
               <span className="separator">. . . . . . . . . . . . . .</span>
-              <p>{room.description}</p>
+              <p className="ml-4 mr-4">{room.description}</p>
               <div className="flex justify-center mt-5 pb-4 text-3xl gap-4">
                 {room.icons}
               </div>

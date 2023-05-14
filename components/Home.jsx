@@ -6,9 +6,10 @@ const Home = () => {
   return (
     <section
       id="home"
-      className="flex bg-slate-950 w-full bg-no-repeat text-white h-screen flex-col justify-center items-start bg-right"
+      className="flex bg-slate-950 w-full bg-no-repeat text-white h-screen flex-col justify-center items-start bg-right-bottom"
       style={{
-        backgroundImage: "url('illustration-header.svg')",
+        backgroundImage: "url('back5.png')",
+        backgroundSize: '860px auto',
       }}
     >
       <header className="absolute top-4 text-sm left-28 font-semibold">

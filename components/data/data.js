@@ -5,7 +5,7 @@ const data = [
   {
     id: 1,
     title: 'Hotel Bookings',
-    description: 'This is a Hotel bookings app that allows users to search a list of rooms availables and make reservations for 24hs. It also allows user to add and remove rooms.',
+    description: 'This is a Hotel bookings app that allows users to search a list of rooms availables and make reservations for 24hs. It also allows user to add new rooms or remove them.',
     icons: <><FaReact /><SiRedux /><SiRubyonrails className="railsIcon text-gray-950" /></>,
     image: "/hotelb.png",
     link: 'https://github.com/sebalp100/hotel-bookings-frontend'

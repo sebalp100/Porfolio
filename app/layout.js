@@ -1,8 +1,8 @@
 import Nav from '@/components/Nav'
 import './globals.css'
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+const inter = Poppins({ weight: '400', subsets: ['latin'] })
 
 export const metadata = {
   title: 'Sebastian´s portfolio',
