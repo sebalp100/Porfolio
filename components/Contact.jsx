@@ -103,27 +103,19 @@ const Contact = () => {
             </div>
             <button
               type="submit"
-              className="
-            w-24
-            px-5
-            py-2
-            bg-orange-500
-            text-white
-            font-bold
-            text-base
-            leading-tight
-            uppercase
-            rounded
-            shadow-md
-            sumbitButton
-            hover:bg-orange-700 hover:shadow-lg
-            focus:bg-orange-700 focus:shadow-lg focus:outline-none focus:ring-0
-            active:bg-orange-800 active:shadow-lg
-            transition
-            duration-150
-            ease-in-out"
+              className="relative inline-block text-lg group"
             >
-              Submit
+              <span className="relative z-10 block px-5 py-2 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+                <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
+                <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-500 group-hover:-rotate-180 ease"></span>
+                <span className="relative">
+                  <span className="flex gap-2 text-base font-bold">SUBMIT</span>
+                </span>
+              </span>
+              <span
+                className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+                data-rounded="rounded-lg"
+              ></span>
             </button>
           </form>
         </div>
