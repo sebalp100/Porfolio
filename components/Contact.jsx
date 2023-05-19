@@ -96,7 +96,7 @@ const Contact = () => {
               focus:text-gray-700 focus:bg-white focus:border-blue-600 focus:outline-none
             "
                 id="exampleFormControlTextarea13"
-                rows="3"
+                rows="6"
                 placeholder="Message"
                 required
               ></textarea>

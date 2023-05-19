@@ -4,10 +4,11 @@ import Carousel from 'nuka-carousel';
 import data from './data/data';
 import Image from 'next/image';
 import Link from 'next/link';
-import { FaGithub, FaRocket } from 'react-icons/fa';
+import { FaGithub, FaRocket, FaRegWindowClose } from 'react-icons/fa';
 
 const Projects = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
+  const [selectedImage, setSelectedImage] = useState(null);
 
   useEffect(() => {
     const handleResize = () => {
@@ -29,6 +30,14 @@ const Projects = () => {
 
   const settings = {
     slidesToShow: slidesToShow,
+  };
+
+  const openModal = (image) => {
+    setSelectedImage(image);
+  };
+
+  const closeModal = () => {
+    setSelectedImage(null);
   };
 
   return (
@@ -54,18 +63,23 @@ const Projects = () => {
                 margin: '5%',
                 paddingTop: '5%',
                 objectFit: 'fill',
+                cursor: 'pointer',
               }}
+              onClick={() => openModal(room.image)}
+              className=" transition-transform hover:scale-110 delay-50 ease"
             />
             <h4 className="roomNames text-lg font-semibold">{room.title}</h4>
             <hr className="my-2 h-px border-t-0 bg-transparent bg-gradient-to-r from-transparent via-neutral-400 to-transparent opacity-25 dark:opacity-100" />
             <div className="flex justify-center mt-3 pb-4 text-3xl gap-4">
               {room.icons}
             </div>
-            <p className="ml-4 text-sm mr-4">{room.description}</p>
+            <p className="ml-4 text-sm mr-4 whitespace-pre-line">
+              {room.description}
+            </p>
             <div className="mt-5 flex gap-3 justify-center items-center pb-2">
               <Link
                 key={room.id + 2}
-                href={room.link}
+                href={room.demo}
                 className="relative inline-block text-lg group"
               >
                 <span className="relative z-10 block px-3 py-2 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
@@ -107,6 +121,26 @@ const Projects = () => {
           </li>
         ))}
       </Carousel>
+      {selectedImage && (
+        <div className="modal fixed inset-0 sm:ml-20 flex items-center justify-center z-10 bg-black bg-opacity-50 backdrop-filter backdrop-blur">
+          <div className="modal-content bg-white w-11/12 sm:w-4/6 p-2">
+            <button
+              className="text-gray-800 mb-2 float-right text-xl font-bold focus:outline-none"
+              type="button"
+              onClick={closeModal}
+            >
+              <FaRegWindowClose />
+            </button>
+            <Image
+              alt="Project"
+              src={selectedImage}
+              width={1118}
+              height={749}
+              className="mx-auto"
+            />
+          </div>
+        </div>
+      )}
     </section>
   );
 };
