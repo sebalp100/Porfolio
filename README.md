@@ -34,3 +34,5 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 <a href='https://pngtree.com/so/orange'>orange png from pngtree.com/</a>
+
+Profile gif: https://dribbble.com/shots/3147608-We-are-actively-seeking-a-Angular-Node-JS-developer/attachments/9672748?mode=media

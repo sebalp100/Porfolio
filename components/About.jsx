@@ -12,14 +12,13 @@ const About = () => {
     >
       <div className="flex flex-col lg:flex-row">
         <div className="flex flex-col items-center">
-          <div className="w-1/3 mt-6 mb-6 lg:h-60 lg:w-60 xl:h-80 xl:w-80 sm:ml-20 lg:ml-40 shadow-custom flex justify-center">
-            <Image
-              src="/about-me.jpg"
-              alt="My Logo"
-              width={384}
-              height={384}
-              className="xl:h-80 xl:max-w-sm lg:h-60 lg:max-w-fit h-40 max-w-min frontImage"
-            />
+          <div className="w-1/3 mt-4 mb-6 lg:h-60 lg:w-60 xl:h-80 xl:w-80 sm:ml-20 lg:ml-40 shadow-custom flex justify-center">
+            <div
+              className="square-image-container"
+              style={{
+                backgroundImage: "url('/profile.gif')",
+              }}
+            ></div>
           </div>
           <div className="lg:flex hidden mt-10 ml-40 lg:text-2xl justify-center xl:text-4xl gap-4">
             <FaJs />

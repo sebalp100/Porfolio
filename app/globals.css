@@ -100,6 +100,16 @@ ul {
   top: 40px !important;
 }
 
+.square-image-container {
+  width: 100%;
+  padding-bottom: 100%;
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+  border: 2px solid #ec8703;
+  overflow: hidden;
+}
+
 .slider-control-centerleft button {
   margin-left: -4.7vw;
   background: #ec8703 !important;
