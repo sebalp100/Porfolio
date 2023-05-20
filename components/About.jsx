@@ -36,24 +36,24 @@ const About = () => {
           </h1>
           <p>
             Hello! My name is Sebastian and I’m a Full-Stack developer from
-            Argentina. I studied at Microverse, a school that emphasizes weekly
-            deadline project building in a remote multicultural pair programming
-            ambient.
+            Argentina. I studied at Microverse, a school that focuses on
+            creating weekly deadline projects in a remote multicultural pair
+            programming ambient.
             <br />
             <br />
-            Before becoming a developer, I started my career in the field of
-            optometry, where I got quite accustomed to working with tight
-            deadlines and a diverse team because that’s what I used to do to be
-            able to care for my patients on a daily basis. My experience as an
-            optometrist, where I constantly adapted to new technologies and
-            analyzed complex data, has prepared me well for a career in software
-            development. These experiences have given me a strong foundation in
-            working with technology and interpreting data.
+            Before becoming a developer, I went to Facultad de Ciencias Exactas
+            from 2012 to 2018. Then, I started my career in the field of
+            optometry, where I got used to working with tight deadlines and a
+            diverse team because that’s what I used to do to be able to take
+            care of my patients. I had to constantly adapt to new technologies
+            and analyze complex data, so this has prepared me well for a career
+            in software development.
             <br />
             <br />
-            Since joining Microverse, I’ve created a number of website projects
-            in JavaScript, React, and Rails with a focus on user experience and
-            performance. All of these projects can be found in my portfolio.
+            Since joining Microverse in 2022, I’ve created several website
+            projects in JavaScript, React, and Rails with a focus on user
+            experience and performance. All of these projects can be found in my
+            portfolio.
           </p>
         </div>
         <div className="lg:hidden justify-center mt-10 sm:ml-14 mb-4 text-2xl xl:text-4xl flex gap-4">

@@ -47,10 +47,11 @@ const Contact = () => {
             </div>
           </div>
           <div className="grow-0 shrink-0 basis-auto mb-12 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
-            <form>
+            <form action="https://formspree.io/f/mgeqkbez" method="post">
               <div className="form-group mb-6">
                 <input
                   type="text"
+                  name="Name"
                   className="form-control block
               w-full
               px-3
@@ -73,6 +74,7 @@ const Contact = () => {
               <div className="form-group mb-6">
                 <input
                   type="email"
+                  name="email"
                   className="form-control block
               w-full
               px-3
@@ -115,6 +117,7 @@ const Contact = () => {
                   rows="6"
                   placeholder="Message"
                   required
+                  name="message"
                 ></textarea>
               </div>
               <button
