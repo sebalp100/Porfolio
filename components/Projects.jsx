@@ -1,10 +1,11 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
 import Carousel from 'nuka-carousel';
-import data from './data/data';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaRocket, FaRegWindowClose } from 'react-icons/fa';
+import data from './data/data';
 
 const Projects = () => {
   const [slidesToShow, setSlidesToShow] = useState(3);
@@ -29,7 +30,7 @@ const Projects = () => {
   }, []);
 
   const settings = {
-    slidesToShow: slidesToShow,
+    slidesToShow,
   };
 
   const openModal = (image) => {
@@ -83,8 +84,8 @@ const Projects = () => {
                 className="relative inline-block text-lg group"
               >
                 <span className="relative z-10 block px-3 py-2 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-                  <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-500 group-hover:-rotate-180 ease"></span>
+                  <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50" />
+                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-500 group-hover:-rotate-180 ease" />
                   <span className="relative">
                     <span className="flex gap-2 text-base font-bold">
                       <FaRocket className="text-xl" />
@@ -95,7 +96,7 @@ const Projects = () => {
                 <span
                   className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
                   data-rounded="rounded-lg"
-                ></span>
+                />
               </Link>
               <Link
                 key={room.id}
@@ -103,8 +104,8 @@ const Projects = () => {
                 className="relative inline-block text-lg group"
               >
                 <span className="relative z-10 block px-3 py-2 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
-                  <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50"></span>
-                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-500 group-hover:-rotate-180 ease"></span>
+                  <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50" />
+                  <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-500 group-hover:-rotate-180 ease" />
                   <span className="relative">
                     <span className="flex gap-2 text-base font-bold">
                       <FaGithub className="text-xl" />
@@ -115,7 +116,7 @@ const Projects = () => {
                 <span
                   className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
                   data-rounded="rounded-lg"
-                ></span>
+                />
               </Link>
             </div>
           </li>

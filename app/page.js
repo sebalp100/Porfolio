@@ -1,7 +1,8 @@
-import About from "@/components/About"
-import Contact from "@/components/Contact"
-import Home from "@/components/Home"
-import Projects from "@/components/Projects"
+import About from '@/components/About';
+import Contact from '@/components/Contact';
+import Home from '@/components/Home';
+import MobileMenu from '@/components/MobileMenu';
+import Projects from '@/components/Projects';
 
 export default function Container() {
   return (
@@ -10,6 +11,7 @@ export default function Container() {
       <About />
       <Projects />
       <Contact />
+      <MobileMenu />
     </main>
-  )
+  );
 }

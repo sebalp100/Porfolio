@@ -1,7 +1,10 @@
 'use client';
+
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { FaHome, FaUserAlt, FaSuitcase, FaPhone } from 'react-icons/fa';
+import {
+  FaHome, FaUserAlt, FaSuitcase, FaPhone,
+} from 'react-icons/fa';
 import Image from 'next/image';
 
 const Nav = () => {
@@ -44,7 +47,7 @@ const Nav = () => {
       aria-label="Sidebar"
     >
       <div className="mt-4 mb-20">
-        <Image src="/portflogo.png" alt="My Logo" width={60} height={50} className='logo' />
+        <Image src="/portflogo.png" alt="My Logo" width={60} height={50} className="logo" />
       </div>
       <div className="flex flex-col gap-6 items-center w-full">
         <Link
@@ -88,7 +91,7 @@ const Nav = () => {
           />
         </Link>
       </div>
-      <div></div>
+      <div />
       <div className="md:hidden flex">Hi</div>
     </nav>
   );
