@@ -179,7 +179,7 @@ ul {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   z-index: 999;
   width: 100%;
 }
@@ -191,7 +191,7 @@ ul {
   padding: 10px;
   cursor: pointer;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.096) !important;
+  background-color: rgba(0, 0, 0, 0.212) !important;
 }
 
 .opened {
