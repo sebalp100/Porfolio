@@ -29,7 +29,7 @@ const Home = () => (
         of my work and experience! If you like what you see and have a project
         you need coded, don’t hesitate to contact me.
       </h4>
-      <div className="sm:ml-40 mt-6 justify-center sm:justify-start flex gap-6">
+      <div className="sm:ml-40 mb-6 mt-6 justify-center sm:justify-start flex gap-6">
         <Link href="https://github.com/sebalp100">
           <FaGithub className="text-2xl hover:text-orange-500 transition ease-in-out delay-130 hover:scale-150 duration-300" />
         </Link>
@@ -40,6 +40,25 @@ const Home = () => (
           <FaEnvelope className="text-2xl hover:text-orange-500 transition ease-in-out delay-130 hover:scale-150 duration-300" />
         </Link>
       </div>
+      <Link href="https://drive.google.com/file/d/1XkQpd7hHf4bJ8jaY88nuq4cBduosmnd-/view?usp=sharing">
+        <button
+          type="submit"
+          className="relative inline-block text-lg group sm:ml-40"
+          style={{ zIndex: 9 }}
+        >
+          <span className="relative z-10 block px-5 py-2 overflow-hidden font-medium leading-tight text-gray-800 transition-colors duration-300 ease-out border-2 border-gray-900 rounded-lg group-hover:text-white">
+            <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50" />
+            <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-500 group-hover:-rotate-180 ease" />
+            <span className="relative">
+              <span className="flex gap-2 text-base font-bold">GET MY CV</span>
+            </span>
+          </span>
+          <span
+            className="absolute bottom-0 right-0 w-full h-11 -mb-0.5 -mr-0.5 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0"
+            data-rounded="rounded-lg"
+          />
+        </button>
+      </Link>
     </div>
   </section>
 );
