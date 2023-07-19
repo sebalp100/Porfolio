@@ -28,7 +28,7 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 Hotel Booking Frontend<a name="about-project"></a>
+# 📖 Personal Portfolio<a name="about-project"></a>
 
 This is a repo for my personal portfolio.
 
