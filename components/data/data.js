@@ -13,7 +13,7 @@ const data = [
       <SiRedux />
       <SiRubyonrails className="railsIcon text-gray-950" />
     </>,
-    image: '/renthomeprev.png',
+    image: '/renprev.png',
     link: 'https://github.com/sebalp100/rent-a-car-backend',
     demo: 'https://rent-a-car-frontend-sebalp100.vercel.app/',
   },
