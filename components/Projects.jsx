@@ -1,11 +1,11 @@
 'use client';
 
-import React, { useEffect, useRef } from 'react';
+import React, { useRef } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { FaGithub, FaRocket } from 'react-icons/fa';
 import data from './data/data';
-import { motion, useScroll, useSpring, useTransform } from 'framer-motion';
+import { motion, useScroll, useSpring } from 'framer-motion';
 
 const Single = ({ room }) => {
   const ref = useRef();
@@ -98,10 +98,12 @@ const Projects = () => {
       ref={ref}
       className="flex text-white w-full bg-gray-900 flex-col justify-center items-center"
     >
-      <div className="progress">
-        <h2 className="text-3xl font-bold mt-5 mb-6">My Projects</h2>
+      <div className="progress z-20">
+        <h2 className="text-3xl font-bold mt-5 mb-6 text-shadow">
+          My Projects
+        </h2>
         <motion.div
-          style={{ scaleX }}
+          style={{ scaleX, zIndex: 9999 }}
           className="progressBar w-[80vw]"
         ></motion.div>
       </div>

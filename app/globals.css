@@ -235,7 +235,7 @@ ul {
 }
 
 .menu-items.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .menu-items ul {
@@ -273,6 +273,10 @@ ul {
 .progressBar {
   height: 10px;
   background-color: #ec8703;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 @media only screen and (min-width: 640px) {

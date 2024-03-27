@@ -35,6 +35,11 @@ const MobileMenu = () => {
             </Link>
           </li>
           <li>
+            <Link href="#experience" onClick={handleNavClick}>
+              <p>My Experience</p>
+            </Link>
+          </li>
+          <li>
             <Link href="#projects" onClick={handleNavClick}>
               <p>My projects</p>
             </Link>
