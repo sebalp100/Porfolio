@@ -3,7 +3,11 @@
 import React, { useState, useEffect } from 'react';
 import Link from 'next/link';
 import {
-  FaHome, FaUserAlt, FaSuitcase, FaPhone,
+  FaHome,
+  FaUserAlt,
+  FaSuitcase,
+  FaPhone,
+  FaFileImage,
 } from 'react-icons/fa';
 import Image from 'next/image';
 
@@ -22,13 +26,16 @@ const Nav = () => {
       const about = document.getElementById('about').offsetTop;
       const projects = document.getElementById('projects').offsetTop;
       const contact = document.getElementById('contact').offsetTop;
+      const experience = document.getElementById('experience').offsetTop;
 
       const scrollPosition = window.scrollY + 200;
 
       if (scrollPosition >= home && scrollPosition < about) {
         setActive('home');
-      } else if (scrollPosition >= about && scrollPosition < projects) {
+      } else if (scrollPosition >= about && scrollPosition < experience) {
         setActive('about');
+      } else if (scrollPosition >= experience && scrollPosition < projects) {
+        setActive('experience');
       } else if (scrollPosition >= projects && scrollPosition < contact) {
         setActive('projects');
       } else if (scrollPosition >= contact) {
@@ -47,7 +54,13 @@ const Nav = () => {
       aria-label="Sidebar"
     >
       <div className="mt-4 mb-20">
-        <Image src="/portflogo.png" alt="My Logo" width={60} height={50} className="logo" />
+        <Image
+          src="/portflogo.png"
+          alt="My Logo"
+          width={60}
+          height={50}
+          className="logo"
+        />
       </div>
       <div className="flex flex-col gap-6 items-center w-full">
         <Link
@@ -73,11 +86,22 @@ const Nav = () => {
           />
         </Link>
         <Link
+          href="#experience"
+          onClick={(e) => handleNavClick(e, '#experience')}
+          className="border-b border-slate-700 w-full"
+        >
+          <FaSuitcase
+            className={`text-3xl w-full mb-6 ${
+              active === 'experience' ? ' text-orange-500' : 'text-white'
+            }`}
+          />
+        </Link>
+        <Link
           href="#projects"
           onClick={(e) => handleNavClick(e, '#projects')}
           className="border-b border-slate-700 w-full"
         >
-          <FaSuitcase
+          <FaFileImage
             className={`text-3xl w-full mb-6 ${
               active === 'projects' ? ' text-orange-500' : 'text-white'
             }`}

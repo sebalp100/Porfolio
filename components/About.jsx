@@ -3,9 +3,7 @@
 import Image from 'next/image';
 import React from 'react';
 import { FaReact, FaJs } from 'react-icons/fa';
-import {
-  SiRuby, SiRedux, SiRubyonrails, SiNextdotjs,
-} from 'react-icons/si';
+import { SiRuby, SiRedux, SiRubyonrails, SiNextdotjs } from 'react-icons/si';
 
 const About = () => (
   <section
@@ -37,24 +35,31 @@ const About = () => (
         </h1>
         <p>
           Hello! My name is Sebastian and I’m a Full-Stack developer from
-          Argentina. I studied at Microverse, a school that focuses on
-          creating weekly deadline projects in a remote multicultural pair
-          programming ambient.
+          Argentina. I studied at Microverse, a school that focuses on creating
+          weekly deadline projects in a remote multicultural pair programming
+          ambient.
           <br />
           <br />
           Before becoming a developer, I went to Facultad de Ciencias Exactas
           from 2012 to 2018. Then, I started my career in the field of
-          optometry, where I got used to working with tight deadlines and a
-          diverse team because that’s what I used to do to be able to take
-          care of my patients. I had to constantly adapt to new technologies
-          and analyze complex data, so this has prepared me well for a career
-          in software development.
+          optometry, where I got used to working with tight deadlines while
+          taking care of my patients. I had to constantly adapt to new
+          technologies and analyze complex data, so this has prepared me well
+          for a career in software development.
           <br />
           <br />
           Since joining Microverse in 2022, I’ve created several website
           projects in JavaScript, React, and Rails with a focus on user
-          experience and performance. All of these projects can be found in my
-          portfolio.
+          experience and performance.
+          <br />
+          <br />
+          Throughout 2023, I worked as a Front-End Developer, collaborating with
+          various companies and fellow developers to create engaging digital
+          experiences.
+          <br />I gained invaluable insights and expanded my knowledge of web
+          development, while learning effective collaboration and project
+          management strategies. It was a transformative year that fueled my
+          passion for this profession.
         </p>
       </div>
       <div className="lg:hidden justify-center mt-10 sm:ml-14 mb-4 text-2xl xl:text-4xl flex gap-4">
