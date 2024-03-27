@@ -12,12 +12,15 @@ const Single = ({ room }) => {
 
   return (
     <section className="h-screen mx-20">
-      <li key={room.id} className="flex mt-20 mb-20 gap-10">
-        <div className="w-[40vw] content-center" ref={ref}>
+      <li
+        key={room.id}
+        className="flex flex-col lg:flex-row mt-20 mb-20 gap-10"
+      >
+        <div className="w-[80vw] lg:w-[40vw] content-center" ref={ref}>
           <Image alt="Project" src={room.image} width={1400} height={749} />
         </div>
         <motion.div
-          className="w-[40vw] flex flex-col justify-center textContainer"
+          className="w-[80vw] lg:w-[40vw] flex flex-col justify-center textContainer"
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ duration: 1.5 }}

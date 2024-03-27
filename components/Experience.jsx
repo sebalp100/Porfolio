@@ -11,8 +11,8 @@ const Experience = () => {
       className="flex text-white gap-10 w-full bg-slate-950 flex-col justify-center items-center"
     >
       <h2 className="text-3xl font-bold mb-10 mt-20">My Experience</h2>
-      <div className="flex flex-col lg:flex-row gap-10 mb-20 ml-[4vw]">
-        <div className="flex flex-col w-[80vw] lg:w-[40vw]">
+      <div className="flex flex-col items-center lg:flex-row gap-10 mb-20 sm:ml-[8vw] lg:ml-[4vw]">
+        <div className="flex flex-col sm:ml-[5vw] xl:ml-0 w-[80vw] lg:w-[40vw]">
           <h2 className="text-2xl font-bold mb-3 text-orange-500">
             SCPC-SAPEL
           </h2>
@@ -32,7 +32,7 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className="w-[90vw] lg:w-[40vw] ">
+        <div className="w-[90vw] pl-[12vw] md:pl-0 sm:w-[70vw] lg:w-[40vw] ">
           <Carousel
             autoplay
             renderCenterLeftControls="true"
@@ -55,8 +55,8 @@ const Experience = () => {
           </Carousel>
         </div>
       </div>
-      <div className="flex gap-10 mb-20 ml-[4vw]">
-        <div className="flex flex-col w-[40vw]">
+      <div className="flex flex-col items-center lg:flex-row gap-10 mb-20 sm:ml-[8vw] lg:ml-[4vw]">
+        <div className="flex flex-col sm:ml-[5vw] xl:ml-0 w-[80vw] lg:w-[40vw]">
           <h2 className="text-orange-500 text-2xl font-bold mb-3">METAMA</h2>
           <h3 className="mb-2 font-bold">
             Front-End Developer (September 2023 - December 2023)
@@ -75,7 +75,7 @@ const Experience = () => {
           </p>
         </div>
 
-        <div className=" w-[40vw]">
+        <div className="w-[90vw] pl-[12vw] md:pl-0 sm:w-[70vw] lg:w-[40vw] ">
           <Carousel
             autoplay
             renderCenterLeftControls="true"
