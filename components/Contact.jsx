@@ -5,7 +5,7 @@ import { FaEnvelope, FaGithub, FaLinkedinIn } from 'react-icons/fa';
 const Contact = () => (
   <div
     id="contact"
-    className="flex bg-no-repeat h-screen bg-left-bottom bg-gray-900 w-full flex-col justify-center items-center"
+    className="flex bg-no-repeat h-screen bg-left-bottom bg-slate-950 w-full flex-col justify-center items-center"
     style={{
       backgroundImage: "url('back8.png')",
       backgroundSize: '900px',
@@ -22,16 +22,13 @@ const Contact = () => (
     >
       <div className="flex flex-wrap bg-no-repeat sm:ml-20">
         <div className="grow-0 shrink-0 basis-auto mb-6 md:mb-0 w-full md:w-6/12 px-3 lg:px-6">
-          <h2 className="text-3xl text-gray-100 font-bold mb-6">
-            Contact me
-          </h2>
+          <h2 className="text-3xl text-gray-100 font-bold mb-6">Contact me</h2>
           <p className="text-gray-100 mb-6">
             Thank you for visiting my site! If you’d like to collaborate on a
             project or have any questions about my services, please use the
             contact form below to get in touch. I’m here to help if you need a
-            new website or just need some general web development advise. I
-            will respond as soon as possible and look forward to hearing from
-            you!
+            new website or just need some general web development advise. I will
+            respond as soon as possible and look forward to hearing from you!
           </p>
           <div className="mt-6 justify-start flex gap-4">
             <Link href="https://github.com/sebalp100">
@@ -128,9 +125,7 @@ const Contact = () => (
                 <span className="absolute inset-0 w-full h-full px-5 py-3 rounded-lg bg-gray-50" />
                 <span className="absolute left-0 w-48 h-48 -ml-2 transition-all duration-300 origin-top-right -rotate-90 -translate-x-full translate-y-12 bg-orange-500 group-hover:-rotate-180 ease" />
                 <span className="relative">
-                  <span className="flex gap-2 text-base font-bold">
-                    SUBMIT
-                  </span>
+                  <span className="flex gap-2 text-base font-bold">SUBMIT</span>
                 </span>
               </span>
               <span
@@ -143,8 +138,7 @@ const Contact = () => (
       </div>
     </div>
     <footer className=" text-xs font-semibold text-gray-50 self-end pr-2 sm:pb-2">
-      Image gif made by
-      {' '}
+      Image gif made by{' '}
       <Link href="https://dribbble.com/mateklemp">mateklemp</Link>
     </footer>
   </div>

@@ -25,11 +25,11 @@ const Home = () => (
         Full-Stack Developer
       </h3>
       <h4 className="sm:w-1/3 sm:ml-40 ml-2 mr-2 shadow-custom">
-        I can help you build a product , feature or website. Look through some
+        I can help you build a product, feature, or website. Look through some
         of my work and experience! If you like what you see and have a project
         you need coded, don’t hesitate to contact me.
       </h4>
-      <div className="sm:ml-40 mt-6 justify-center sm:justify-start flex gap-6">
+      <div className="sm:ml-40 mb-6 mt-6 justify-center sm:justify-start flex gap-6">
         <Link href="https://github.com/sebalp100">
           <FaGithub className="text-2xl hover:text-orange-500 transition ease-in-out delay-130 hover:scale-150 duration-300" />
         </Link>

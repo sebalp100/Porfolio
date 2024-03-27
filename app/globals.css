@@ -22,8 +22,7 @@
 
 body {
   color: rgb(var(--foreground-rgb));
-  background:
-    linear-gradient(
+  background: linear-gradient(
       to bottom,
       transparent,
       rgb(var(--background-end-rgb))
@@ -179,7 +178,7 @@ ul {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   z-index: 999;
   width: 100%;
 }
@@ -191,7 +190,7 @@ ul {
   padding: 10px;
   cursor: pointer;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.096) !important;
+  background-color: rgba(0, 0, 0, 0.212) !important;
 }
 
 .opened {
@@ -236,7 +235,7 @@ ul {
 }
 
 .menu-items.open {
-  max-height: 300px;
+  max-height: 400px;
 }
 
 .menu-items ul {
@@ -261,6 +260,23 @@ ul {
 
 .menu-items p:hover {
   background-color: rgb(65, 65, 65);
+}
+
+.progress {
+  position: sticky;
+  top: 0;
+  left: 0;
+  padding-top: 50px;
+  text-align: center;
+}
+
+.progressBar {
+  height: 10px;
+  background-color: #ec8703;
+}
+
+.text-shadow {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 1);
 }
 
 @media only screen and (min-width: 640px) {
