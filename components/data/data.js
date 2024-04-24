@@ -75,15 +75,15 @@ const data = [
   },
   {
     id: 7,
-    title: 'Rails Blog App',
-    description: 'This is a simple blog app made in Rails that will show the list of posts and empower readers to interact with them by adding comments and liking posts. It also has active storage.',
+    title: 'Simple Modern Design',
+    description: 'This is a simple website made with React and TailwindCSS that follows the latest trends in UI design. Made completely responsive.',
     icons: <>
-      <SiRuby />
-      <SiRubyonrails className="railsIcon text-gray-950" />
+      <FaReact />
+      <SiTailwindcss />
     </>,
-    image: '/post2.png',
-    link: 'https://github.com/sebalp100/blog-app-ror',
-    demo: 'https://rails-production-245a.up.railway.app/',
+    image: '/modern.png',
+    link: 'https://github.com/sebalp100/modern-layout',
+    demo: 'https://modern-layout-theta.vercel.app/',
   },
   {
     id: 8,
