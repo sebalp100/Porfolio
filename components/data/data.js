@@ -63,18 +63,6 @@ const data = [
   },
   {
     id: 5,
-    title: 'BudgetMate',
-    description: 'Mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
-    icons: <>
-      <SiRuby />
-      <SiRubyonrails className="railsIcon text-gray-950" />
-    </>,
-    image: '/budget.png',
-    link: 'https://github.com/sebalp100/budget-mate',
-    demo: 'https://budgetmate.onrender.com/',
-  },
-  {
-    id: 7,
     title: 'Simple Modern Design',
     description: 'This is a simple website made with React and TailwindCSS that follows the latest trends in UI design. Made completely responsive.',
     icons: <>
@@ -84,6 +72,18 @@ const data = [
     image: '/modern.png',
     link: 'https://github.com/sebalp100/modern-layout',
     demo: 'https://modern-layout-theta.vercel.app/',
+  },
+  {
+    id: 6,
+    title: 'BudgetMate',
+    description: 'Mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
+    icons: <>
+      <SiRuby />
+      <SiRubyonrails className="railsIcon text-gray-950" />
+    </>,
+    image: '/budget.png',
+    link: 'https://github.com/sebalp100/budget-mate',
+    demo: 'https://budgetmate.onrender.com/',
   },
   {
     id: 8,
