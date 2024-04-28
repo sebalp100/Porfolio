@@ -1,7 +1,10 @@
 const { FaReact, FaStripeS } = require('react-icons/fa');
 const {
   SiRedux, SiRubyonrails, SiRuby, SiTailwindcss, SiNodedotjs, SiMui, SiMongodb, SiExpress, SiFirebase, SiJavascript, SiWebpack, SiJest, SiNextdotjs,
+  SiAppwrite,
 } = require('react-icons/si');
+const { TbBrandReactNative } = require("react-icons/tb");
+
 
 const data = [
   {
@@ -35,6 +38,19 @@ const data = [
   },
   {
     id: 3,
+    title: 'FlickFusion',
+    description: 'Mobile app built with React Native for smooth user experiences, Animatable for appealing animations, and coupled with the solid backend systems of Appwrite. It allows user to share and upload videos made with AI, and save their favourites to bookmarks.',
+    icons: <>
+      <SiAppwrite />
+      <TbBrandReactNative />
+      <SiTailwindcss />
+    </>,
+    image: '/ao.png',
+    link: 'https://github.com/sebalp100/react-native-ai-videos',
+    demo: 'https://github.com/sebalp100/react-native-ai-videos',
+  },
+  {
+    id: 4,
     title: 'Rent a Car',
     description: 'This is a Car rental app that allows users to search a list of cars available and rent them, choosing a starting and a returning date. \n\n Admins can add and remove brands or cars, and cancel reservations.',
     icons: <>
@@ -49,7 +65,7 @@ const data = [
     demo: 'https://rent-a-car-frontend-sebalp100.vercel.app/',
   },
   {
-    id: 4,
+    id: 5,
     title: 'Hotel Bookings',
     description: 'This is a Hotel bookings app that allows users to search a list of rooms availables and make reservations for 24hs. It also allows users to add new rooms or remove them.',
     icons: <>
@@ -62,7 +78,7 @@ const data = [
     demo: 'https://hotel-bookings-frontend.vercel.app',
   },
   {
-    id: 5,
+    id: 6,
     title: 'Simple Modern Design',
     description: 'This is a simple website made with React and TailwindCSS that follows the latest trends in UI design. Made completely responsive.',
     icons: <>
@@ -74,7 +90,7 @@ const data = [
     demo: 'https://modern-layout-theta.vercel.app/',
   },
   {
-    id: 6,
+    id: 7,
     title: 'BudgetMate',
     description: 'Mobile web application where you can manage your budget: you have a list of transactions associated with a category, so that you can see how much money you spent and on what.',
     icons: <>
@@ -87,19 +103,6 @@ const data = [
   },
   {
     id: 8,
-    title: 'Space Travelers',
-    description: 'This is a website that allows users to reserve and book their favorite rockets, missions and dragons spaceships. The app displays real live data from the SpaceX API using a Redux store.',
-    icons: <>
-      <FaReact />
-      <SiRedux />
-      <SiTailwindcss />
-    </>,
-    image: '/spacetra.png',
-    link: 'https://github.com/sebalp100/space-travelers',
-    demo: 'https://space-travelers-iyfi.onrender.com/',
-  },
-  {
-    id: 10,
     title: 'Simple Chat',
     description: 'This is a website that allows users to chat with one another using real-time Firebase data and React hooks. The app allows users to look up their previous conversations with other people.',
     icons: <>
@@ -111,7 +114,7 @@ const data = [
     demo: 'https://simple-chat-app-puqe.onrender.com/',
   },
   {
-    id: 11,
+    id: 9,
     title: 'New Movies',
     description: 'Website that has a desktop and mobile version and allows users to interact by giving a like to their favorite movies and checking for other users comments, as well as adding their own.',
     icons: <>

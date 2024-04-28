@@ -95,7 +95,7 @@ circle {
   height: 10px;
 }
 
-ul {
+.slider-control-bottomcenter > ul {
   position: absolute;
   top: 40px !important;
 }
