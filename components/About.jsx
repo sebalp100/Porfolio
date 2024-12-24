@@ -53,13 +53,10 @@ const About = () => (
           experience and performance.
           <br />
           <br />
-          Throughout 2023, I worked as a Front-End Developer, collaborating with
-          various companies and fellow developers to create engaging digital
-          experiences.
+          Throughout 2023 and 2024, I worked as a Front-End Developer, collaborating with
+          various companies and fellow developers to create several websites.
           <br />I gained invaluable insights and expanded my knowledge of web
-          development, while learning effective collaboration and project
-          management strategies. It was a transformative year that fueled my
-          passion for this profession.
+          development, while learning project management strategies.
         </p>
       </div>
       <div className="lg:hidden justify-center mt-10 sm:ml-14 mb-4 text-2xl xl:text-4xl flex gap-4">
